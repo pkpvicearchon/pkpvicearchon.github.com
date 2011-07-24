@@ -1,0 +1,116 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+	body {
+  	font-size: 16px;
+  	line-height: 1.5em;
+		background: #FFF url('../images/soft_wallpaper.png');
+		color: #10284A;
+    font-family: 'Myriad Pro', 'Lucida Grande', 'Lucida Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+	
+	.header {
+    background: #FFF url('../images/leather.png');
+    border-bottom: 3px solid #10284A; }
+    
+  h1 {
+    
+    margin-bottom: .3em;
+    padding: 20px;
+    line-height: 1em;
+    font-family: 'Lobster';
+    font-size: 9em;
+    text-align: center; }
+  
+  a {
+    color: #10284A;
+    text-decoration: none; }
+    
+  #starshield {
+    background: url('../images/starshield.png') no-repeat;
+    width: 119px;
+    height: 106px;
+    margin: 0 auto;
+    margin-top: -51px; }
+  
+  ul {
+    list-style: none; }
+    
+  /*********** Links ***********/
+  
+  #nav {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    float: left; }
+  
+  #nav li {
+    height: 57px;
+    clear: both; }
+  
+  #nav img {
+    float: left;
+    margin-right: 8px; }
+  
+  .link-text {
+    float: left;
+    line-height: .9em;
+    margin-top: 13px; }
+  
+  .small {
+    color: #777;
+    font-size: .7em; }
+  
+  #article a { color: #360; }
+  #calendar a { color: #900;}
+  #fb a { color: #10284A; }
+  
+  /******** For rides call *********/
+
+  h2 {
+    font-family: Ultra;
+    font-size: 1.6em;
+    line-height: 1.1em; }
+
+  #rides {
+    float: left;
+    margin-bottom: 15px; }
+
+  .phone { float: right; }
+  
+  /************ Slides *************/
+
+  .slides { position: relative; }
+  .slide-text {
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFF; }
+  .spacer {
+    padding: 10px; }
+  h3 { color: #F8C718; }
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+		
+	}
+
+}
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}
