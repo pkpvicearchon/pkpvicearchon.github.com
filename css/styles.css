@@ -79,7 +79,9 @@
   
   /************ Slides *************/
 
-  .slides { position: relative; }
+  .slides {
+    position: relative;
+    z-index: -1; }
   .slide-text {
     position: absolute;
     bottom: 8px;
@@ -89,6 +91,23 @@
   .spacer {
     padding: 10px; }
   h3 { color: #F8C718; }
+
+  /************** Article **************/
+  
+  .article-container {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 10px; }
+
+  .article-container h2 {
+    font-size: 2em;
+    margin: 10px 0; }
+
+  p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    padding-bottom: 12px; }
+    
 
 /* ============================= */
 /* ! Layout for mobile version   */
