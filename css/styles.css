@@ -2,8 +2,11 @@
 /* ! Layout for desktop version   */
 /* ============================== */
 
+  html {
+    font-size: 14px; }
+
 	body {
-  	font-size: 16px;
+    font-size: 1.2em;
   	line-height: 1.5em;
 		background: #FFF url('../images/soft_wallpaper.png');
 		color: #10284A;
@@ -11,10 +14,10 @@
 	
 	.header {
     background: #FFF url('../images/leather.png');
-    border-bottom: 3px solid #10284A; }
+    border-bottom: 3px solid #10284A;
+    padding-top: 20px; }
     
   h1 {
-    
     margin-bottom: .3em;
     padding: 20px;
     line-height: 1em;
@@ -67,8 +70,9 @@
   /******** For rides call *********/
 
   h2 {
+    font-size: 12em;
+    width: 100%;
     font-family: Ultra;
-    font-size: 1.6em;
     line-height: 1.1em; }
 
   #rides {
@@ -87,7 +91,8 @@
     bottom: 8px;
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
-    color: #FFF; }
+    color: #FFF;
+    font-size: .8em; }
   .spacer {
     padding: 10px; }
   h3 { color: #F8C718; }
@@ -113,23 +118,26 @@
 /* ! Layout for mobile version   */
 /* ============================= */
 
-@media handheld, only screen and (max-width: 767px) {
+@media screen and (min-width: 571px) and (max-width: 780px) {
 
 	body {
-		
+    font-size: 1em;
+    line-height: 1.5em;	
 	}
 
 }
 
-/* ========================================== */
-/* ! Provide higher res assets for iPhone 4   */
-/* ========================================== */
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
-
-/*	.logo {
-		background: url(logo2x.jpg) no-repeat;
-		background-size: 212px 303px;
-	}*/
-
+@media screen and (max-width: 570px)  {
+  html {
+		-webkit-text-size-adjust: none;
+		-ms-text-size-adjust: none;
+	}
+	
+	body {
+		min-width: 320px;
+		overflow: auto;
+    font-size: .875em;
+    line-height: 1.5em;
+	}
+	
 }
