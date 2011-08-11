@@ -120,7 +120,7 @@
 
   .article-container h2 {
     font-size: 2em;
-    margin: 10px 0; }    
+    margin: 10px 0; }
 
 /* ============================= */
 /* ! Layout for mobile version   */
@@ -128,10 +128,9 @@
 
 @media screen and (min-width: 571px) and (max-width: 780px) {
 
-	body {
-    font-size: 1em;
-    line-height: 1.5em;	
-	}
+  .article-container {
+    width: 75%;
+  }
 
 }
 
@@ -147,5 +146,9 @@
     font-size: .9em;
     line-height: 1.5em;
 	}
+
+  .article-container {
+    width: 80%;
+  }
 	
 }
