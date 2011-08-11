@@ -16,7 +16,7 @@
     background: #FFF url('../images/leather.png');
     border-bottom: 3px solid #10284A;
     padding-top: 20px; }
-    
+
   h1 {
     margin-bottom: .3em;
     padding: 20px;
@@ -24,41 +24,47 @@
     font-family: 'Lobster';
     font-size: 9em;
     text-align: center; }
-  
+
   a {
     color: #10284A;
     text-decoration: none; }
-    
+
+  p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    padding-bottom: 12px; }
+
+
   #starshield {
     background: url('../images/starshield.png') no-repeat;
     width: 119px;
     height: 106px;
     margin: 0 auto;
     margin-top: -51px; }
-  
+
   ul {
     list-style: none; }
-    
+
   /*********** Links ***********/
-  
+
   #nav {
     margin-right: 15px;
     margin-bottom: 15px;
     float: left; }
-  
+
   #nav li {
     height: 57px;
     clear: both; }
-  
+
   #nav img {
     float: left;
     margin-right: 8px; }
-  
+
   .link-text {
     float: left;
     line-height: .9em;
     margin-top: 13px; }
-  
+
   .small {
     color: #777;
     font-size: .7em; }
@@ -84,8 +90,10 @@
   /************ Slides *************/
 
   .slides {
+    max-width: 570px;
     position: relative;
     z-index: -1; }
+  
   .slide-text {
     position: absolute;
     bottom: 8px;
@@ -93,8 +101,14 @@
     background: rgba(0, 0, 0, 0.6);
     color: #FFF;
     font-size: .8em; }
+
+  .slide-text p {
+    padding-bottom: 0;
+    font-size: 1em;
+    line-height: 1.2em; }
+
   .spacer {
-    padding: 10px; }
+    padding: 5px 10px 5px 10px; }
   h3 { color: #F8C718; }
 
   /************** Article **************/
@@ -106,13 +120,7 @@
 
   .article-container h2 {
     font-size: 2em;
-    margin: 10px 0; }
-
-  p {
-    font-size: 1.2em;
-    line-height: 1.4em;
-    padding-bottom: 12px; }
-    
+    margin: 10px 0; }    
 
 /* ============================= */
 /* ! Layout for mobile version   */
@@ -136,7 +144,7 @@
 	body {
 		min-width: 320px;
 		overflow: auto;
-    font-size: .875em;
+    font-size: .9em;
     line-height: 1.5em;
 	}
 	
