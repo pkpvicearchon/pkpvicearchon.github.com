@@ -23,7 +23,20 @@
     $(document).ready(function() {
       $("h2").fitText();
       $("a.single_image").fancybox();
+
+      setInterval(slideshow, 4000);
     });
+
+    function slideshow() {
+      var current = $('.visible');
+      var next = current.next();
+      if(next.length == 0) {
+        next = $('.slides li:first');
+      }
+      current.fadeOut('slow').removeClass('visible');
+      next.fadeIn('slow').addClass('visible');
+    }
+
   </script>
 </head>
 
@@ -78,15 +91,27 @@
           <li>Mike Enck<div class="phone">724.456.8942</div></li>
         </ul>
       </div><!-- End rides -->
-      <div class="slides">
-        <img src="images/haunted_house.png" />
-        <div class="slide-text">
-          <div class="spacer">
-           <h3>Philanthropy</h3>
-           <p>Every year we go and do a bunch of cool stuff dawg. One of those stuffs is Haunted House. It's pretty neat. Fun. Awesome. Cool. We scare mad peeps, shawty.</p>
+      <ul class="slides">
+        <li class="visible">
+          <img src="images/haunted_house.png" />
+          <div class="slide-text">
+            <div class="spacer">
+             <h3>Charity & Philanthropy</h3>
+             <p>Our chapter has put on an annual Haunted House event for the past 31 years. We raise thousands of dollars which is donated through Pi Kappa Phi's philanthropic wing, Push America. We also raise money for charity by organizing an easter egg hunt and an historic tour of our house.</p>
+            </div>
           </div>
-        </div>
-      </div>
+        </li>
+        <li style="display: none;">
+          <img src="images/broomball.jpg" />
+          <div class="slide-text">
+            <div class="spacer">
+             <h3>Sports</h3>
+             <p>We play them.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="clear"></div>
     </div><!-- End left -->
 		<div class="sixcol last right">
 		  <img src="images/castle.png" class="castle" />
